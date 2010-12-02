@@ -1,0 +1,39 @@
+----------------------------
+LOGIN README 
+----------------------------
+
+----------------------------------
+1 * Installation instructions
+2 * Usage
+----------------------------------
+
+----------------------
+ 1. Installation
+----------------------
+Currently Login provides a Makefile for only UNIX-like systems.
+You will need a version of g++ and also development files for SDL.
+To check if you are good to go see if the sdl-config command works.
+
+After you have those things done just change to the directory containing login and type:
+ make
+This will create a executable called login in the current directory if all goes well. To run it use:
+./login
+
+To install the program system wide in /usr/bin run the following command as ROOT:
+make install
+
+NOTE:The system wide program will be /usr/bin/login_game. Make sure you use login_game to start it. This is to prevent conflicts with the original login command.
+
+
+----------------------
+ 2. Usage
+----------------------
+Once the program starts the following keys work:
+ s - start/stop running the game of life
+ r - randomly fill the grid. Works only when game is stopped.
+ c - clears the grid. Works only when game is stopped.
+ - - increase the speed of the game
+ + - decrease the speed of the game
+You can also you the mouse to set/unset any cell by clicking on it. This too works only when the game is stopped.
+
+
